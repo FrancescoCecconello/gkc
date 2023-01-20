@@ -1,0 +1,51 @@
+---
+problem: 03
+name: mst
+title: Alberi in un grafo
+tags:
+- "grafi"
+- "buone caratterizzazioni"
+- "cicli e tagli"
+- "algoritmi classici su reti"
+instance:
+  n: 5
+  m: 8
+  edges: 
+  - '[({0,1},2),({1,2},2),({2,3},2),({1,3},2),({3,4},5),({1,4},3),({0,4},3)]'
+
+modes:
+- free
+- with_checks
+pages:
+  teoria: https://cms.di.univr.it/home/RO/explain/lcs
+
+graphic_instance_descriptor: 
+      "<iframe id = 'frame1' src='{% url 'grafo_template' %}' width='100%' height='300px' style='border: 1;' overflow='auto' scrolling='no'></iframe>"
+         
+
+tasks:
+- 1:
+    general_description_before_task: Si consideri il grafo $G$, con pesi sugli archi, riportato nelle richieste sottostanti.
+    tot_points: 70
+    pt_formato_OK: 0
+    pt_feasibility_OK: 1
+    pt_consistency_OK: 0
+    goals:
+    - opt_sol
+    - opt_val
+    request: "Fornire un albero ricoprente di peso minimo"
+    init_answ_cell_msg: '#Inserisci la tua risposta (una stringa, per esempio "TATATAX")\nopt_sol1=""\n#e
+      la sua lunghezza:\nopt_val1=7'
+    verif: 'verify_submission(TALight_problem_name=''RO_lcs'',checkers=[''TALight'',
+      ''embedded_in_notebook''],task_dict={''task'': 1, ''pt_tot'': 45, ''pt_formato_OK'':
+      0, ''pt_feasibility_OK'': 1, ''pt_consistency_OK'': 0}, input_data_assigned={''s'':''GCTCTACGCTGGATTC'',''t'':''ATGCCGCTTACCGTGATC'',''beginning'':'''',''ending'':'''',''forbidden_s_interval_first_pos'':1000000,''forbidden_s_interval_last_pos'':0,''reduce_s_to_its_suffix_of_length'':16,''reduce_s_to_its_prefix_of_length'':16,''reduce_t_to_its_suffix_of_length'':18,''reduce_t_to_its_prefix_of_length'':18,''partialDPtable'':[],''CAP_FOR_NUM_OPT_SOLS'':10,''CAP_FOR_NUM_SOLS'':10,},
+      long_answer_dict={''opt_sol'':(opt_sol1,''opt_sol1''),''opt_val'':(opt_val1,''opt_val1''),})'
+    init_answ_cell_msg_automatic: '#Inserisci in `opt_sol1` una sottosequnza ottima\nopt_sol1=SONOUNASTRINGA\n#Immetti
+      in `opt_val1` il valore della soluzione introdotta (un intero, la lunghezza
+      della stringa introdotta)\nopt_val1=14'
+
+general_description_to_conclude: ricordati di salvare periodicamente il tuo lavoro.
+  Quando hai finito di lavorare su un esercizio ti conviene chiudere la sua scheda
+  (potrai sempre riaprirla successivamente)
+
+...
