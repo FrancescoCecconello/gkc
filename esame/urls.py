@@ -1,1 +1,0 @@
-/home/samueletremo/RO_browser/esame/generated/urls.py
